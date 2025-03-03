@@ -1,0 +1,67 @@
+<section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      
+      <div class="skills-categories">
+        <div class="category">
+          <h3>Frontend Development</h3>
+          <div class="skills-grid">
+            @for (skill of frontendSkills; track skill.name) {
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i [class]="skill.icon"></i>
+                </div>
+                <h4>{{ skill.name }}</h4>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress" [style.width.%]="skill.level"></div>
+                  </div>
+                  <span>{{ skill.level }}%</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+        
+        <!-- <div class="category">
+          <h3>Backend Development</h3>
+          <div class="skills-grid">
+            @for (skill of backendSkills; track skill.name) {
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i [class]="skill.icon"></i>
+                </div>
+                <h4>{{ skill.name }}</h4>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress" [style.width.%]="skill.level"></div>
+                  </div>
+                  <span>{{ skill.level }}%</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div> -->
+        
+        <div class="category">
+          <h3>Tools & Others</h3>
+          <div class="skills-grid">
+            @for (skill of toolsSkills; track skill.name) {
+              <div class="skill-card">
+                <div class="skill-icon">
+                  <i [class]="skill.icon"></i>
+                </div>
+                <h4>{{ skill.name }}</h4>
+                <div class="skill-level">
+                  <div class="progress-bar">
+                    <div class="progress" [style.width.%]="skill.level"></div>
+                  </div>
+                  <span>{{ skill.level }}%</span>
+                </div>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

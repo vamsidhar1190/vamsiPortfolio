@@ -1,0 +1,123 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-color);
+    padding-top: 80px;
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .hero-text h1 span {
+    color: var(--primary-color);
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+
+  .btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    transition: var(--transition);
+  }
+
+  .social-links a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+  }
+
+  @media (max-width: 992px) {
+    .hero-content {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .hero-text {
+      margin-top: 40px;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+
+    .hero-image {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,108 @@
+<section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>vamsidhar&#64;gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 9704674140</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Hyderabad, Telangana</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/vamsidhar1190" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vamsidhar-p-7b6834230/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/vamsidhar2345" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/vamsidhar9614/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send Me a Message</h3>
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                formControlName="name" 
+                [class.invalid]="isInvalid('name')"
+              >
+              <div *ngIf="isInvalid('name')" class="error-message">
+                Name is required
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                formControlName="email"
+                [class.invalid]="isInvalid('email')"
+              >
+              <div *ngIf="isInvalid('email')" class="error-message">
+                Please enter a valid email
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input 
+                type="text" 
+                id="subject" 
+                formControlName="subject"
+                [class.invalid]="isInvalid('subject')"
+              >
+              <div *ngIf="isInvalid('subject')" class="error-message">
+                Subject is required
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea 
+                id="message" 
+                formControlName="message" 
+                rows="5"
+                [class.invalid]="isInvalid('message')"
+              ></textarea>
+              <div *ngIf="isInvalid('message')" class="error-message">
+                Message is required
+              </div>
+            </div>
+            
+            <button type="submit" class="btn" [disabled]="contactForm.invalid || isSubmitting">
+              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+            </button>
+            
+            <div *ngIf="submitSuccess" class="success-message">
+              Your message has been sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>

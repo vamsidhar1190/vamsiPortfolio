@@ -1,0 +1,153 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+
+  .tabs button {
+    padding: 12px 30px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .tabs button.active,
+  .tabs button:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .experience-timeline,
+  .education-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .experience-timeline::before,
+  .education-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 50px;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: 11px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 4px solid white;
+    box-shadow: 0 0 0 2px var(--primary-color);
+  }
+
+  .timeline-content {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+  }
+
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .timeline-header h3 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-right: 15px;
+  }
+
+  .company {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .timeline-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+
+  .period, .location {
+    display: flex;
+    align-items: center;
+  }
+
+  .period::before {
+    content: '\\f073';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 5px;
+    color: var(--primary-color);
+  }
+
+  .location::before {
+    content: '\\f3c5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+    color: var(--primary-color);
+  }
+
+  .timeline-body ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .timeline-body li {
+    margin-bottom: 10px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tech-tag {
+    padding: 5px 10px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 768px) {
+    .timeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .timeline-header h3 {
+      margin-bottom: 5px;
+    }
+
+    .timeline-meta {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }

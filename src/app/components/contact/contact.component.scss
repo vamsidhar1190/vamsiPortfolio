@@ -1,0 +1,137 @@
+.contact-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+  }
+
+  .contact-info {
+    flex: 1;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+  }
+
+  .contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-info > p {
+    margin-bottom: 30px;
+    line-height: 1.8;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .info-item i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  .info-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: var(--transition);
+  }
+
+  .social-links a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+
+  .contact-form {
+    flex: 1.5;
+    background-color: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+
+  .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+  }
+
+  .form-group input.invalid,
+  .form-group textarea.invalid {
+    border-color: var(--accent-color);
+  }
+
+  .error-message {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  @media (max-width: 992px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
