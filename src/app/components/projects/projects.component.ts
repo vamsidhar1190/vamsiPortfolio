@@ -21,53 +21,46 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      title: 'E-Commerce Dashboard',
-      description: 'A comprehensive admin dashboard for e-commerce platforms with real-time analytics, inventory management, and order processing.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'TypeScript', 'NgRx', 'Chart.js', 'Firebase'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com'
+      title: 'ATC Project',
+      description: 'Designed and implemented a flight search and seat booking system with dynamic filters and real-time seat selection. Conducted manual end-to-end testing to validate user flows and application performance across different devices and browsers.',
+      image: 'assets/indigo-3.jpg',
+      technologies: ['Angular', 'TypeScript', 'NgRx','HTML','Scss','primeng','RESTful APIs' ],
+      demoLink: '',
+      codeLink: ''
     },
     {
-      title: 'Task Management App',
-      description: 'A feature-rich task management application with drag-and-drop functionality, team collaboration, and progress tracking.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'Material UI', 'Node.js'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com'
+      title: 'Thapala Project',
+      description: ' Integrated a rich-text editor (Quill) with customized toolbars for real-time formatting. Developed Angular services for seamless UI-backend communication. Performed manual testing to ensure feature functionality and UI consistency.',
+      image: 'assets/Mailroom1.jpg',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'PrimeNg', 'HTML','Scss','Bootstrap','RESTful APIs'],
+      demoLink: '',
+      codeLink: ''
     },
     {
-      title: 'Weather Forecast App',
-      description: 'A weather application that provides real-time forecasts, historical data, and interactive maps for locations worldwide.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'TypeScript', 'OpenWeatherMap API', 'Leaflet'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com'
+      title: 'Admin Dashboards',
+      description: 'Developed multiple admin dashboards for hospital management, sales, power, banking, health tracking, and grievance management, integrating features like patient tracking, performance reports, monitoring, and workflow engines from March 2023 to May 2024.',
+      image: 'assets/admin.webp',
+      technologies: ['Angular', 'TypeScript','PrimeNg', 'HTML','Scss','Bootstrap','Chart.Js'],
+      demoLink: '',
+      codeLink: ''
     },
     {
-      title: 'Social Media Dashboard',
-      description: 'A unified dashboard for managing multiple social media accounts with analytics, content scheduling, and engagement tracking.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'TypeScript', 'Express', 'MongoDB', 'Social APIs'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com'
+      title: 'Task Management Application',
+      description: 'Developed a task management application using Angular, allowing users to create, update, and delete tasks. Implemented user authentication, task categorization, and a dynamic dashboard for tracking progress.',
+      image: '/assets/task.webp',
+      technologies: ['Angular', 'TypeScript', 'PrimeNg', 'HTML','Scss','Bootstrap'],
+      demoLink: '',
+      codeLink: ''
     },
     {
-      title: 'Real Estate Listing Platform',
-      description: 'A comprehensive platform for real estate listings with advanced search, filtering, and virtual tours functionality.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'TypeScript', 'Firebase', 'Google Maps API'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com'
+      title: 'E-commerce',
+      description: 'Created an e-commerce product catalog application showcasing various products with filtering and sorting capabilities. Users can view product details and add items to a shopping cart, enhancing the shopping experience.',
+      image: '/assets/ecommerce.jpg',
+      technologies: ['Angular', 'TypeScript', 'PrimeNg', 'HTML','Scss','Bootstrap','RESTful APIs'],
+      demoLink: '',
+      codeLink: ''
     },
-    {
-      title: 'Fitness Tracking App',
-      description: 'A fitness application for tracking workouts, nutrition, and progress with personalized recommendations and analytics.',
-      image: 'https://via.placeholder.com/600x400',
-      technologies: ['Angular', 'TypeScript', 'Chart.js', 'Node.js', 'MongoDB'],
-      demoLink: 'https://example.com',
-      codeLink: 'https://github.com'
-    }
+    
   ];
 
   filters: string[] = ['All', 'Angular', 'TypeScript', ];

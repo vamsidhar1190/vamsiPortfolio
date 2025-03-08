@@ -2,7 +2,7 @@
     <div class="container">
       <h2 class="section-title">My Projects</h2>
       
-      <div class="projects-filter">
+      <!-- <div class="projects-filter">
         <button 
           *ngFor="let filter of filters" 
           [class.active]="activeFilter === filter"
@@ -10,17 +10,17 @@
         >
           {{ filter }}
         </button>
-      </div>
+      </div> -->
       
       <div class="projects-grid">
         @for (project of filteredProjects; track project.title) {
           <div class="project-card">
             <div class="project-image">
               <img [src]="project.image" [alt]="project.title">
-              <div class="project-links">
+              <!-- <div class="project-links">
                 <a [href]="project.demoLink" target="_blank" class="btn">Live Demo</a>
                 <a [href]="project.codeLink" target="_blank" class="btn">View Code</a>
-              </div>
+              </div> -->
             </div>
             <div class="project-info">
               <h3>{{ project.title }}</h3>

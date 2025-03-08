@@ -27,7 +27,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
+    justify-content: center; /* Ensures grid itself is centered if the row isn't filled */
+    width: 100%; /* Ensure the grid takes the full width */
+    margin: 0 auto; /* Center the grid container if it has fixed width */
   }
+  
+  
 
   .project-card {
     border-radius: var(--border-radius);

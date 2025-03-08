@@ -98,14 +98,14 @@
   }
 
   .period::before {
-    content: '\\f073';
+    content: '\f073';
     font-family: 'Font Awesome 5 Free';
     margin-right: 5px;
     color: var(--primary-color);
   }
 
   .location::before {
-    content: '\\f3c5';
+    content: '\f3c5';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 5px;

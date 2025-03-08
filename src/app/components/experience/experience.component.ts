@@ -29,65 +29,56 @@ export class ExperienceComponent {
 
   workExperience: Experience[] = [
     {
-      title: 'Senior Angular Developer',
-      company: 'Tech Innovations Inc.',
-      period: 'Jan 2022 - Present',
-      location: 'New York, USA',
+      title: 'Associate Software Engineer',
+      company: 'Ahex Technologies, Hyderabad.',
+      period: 'Nov 2022 - Sep 2024',
+      location: 'Hyderabad, Telangana',
       description: [
-        'Lead a team of 5 developers in building enterprise-level Angular applications',
-        'Implemented state management solutions using NgRx, resulting in a 30% improvement in application performance',
-        'Developed reusable component libraries that reduced development time by 40%',
-        'Established coding standards and best practices for the frontend team'
-      ],
-      technologies: ['Angular', 'TypeScript', 'NgRx', 'RxJS', 'Material UI', 'Jest']
-    },
-    {
-      title: 'Angular Developer',
-      company: 'Digital Solutions Ltd.',
-      period: 'Mar 2019 - Dec 2021',
-      location: 'Boston, USA',
-      description: [
-        'Developed and maintained multiple Angular applications for clients in finance and healthcare',
-        'Created responsive UI components using Angular Material and custom CSS',
-        'Integrated RESTful APIs and implemented authentication using JWT',
+        'As an Associate Software Engineer, I have gained some experience and am now applying my skills to contribute to real-world software development projects.',
+        'I work more independently but still seek guidance from senior engineers for complex tasks or technical challenges',
+        ' I continue to develop my technical expertise and soft skills, preparing for further advancement to more senior engineering roles.',
         'Collaborated with UX designers to implement pixel-perfect designs'
       ],
-      technologies: ['Angular', 'TypeScript', 'SCSS', 'Angular Material', 'Firebase', 'Jasmine']
+      technologies: ['Angular', 'TypeScript', 'SCSS', 'PrimeNg','Bootstrap']
     },
     {
-      title: 'Frontend Developer',
-      company: 'WebCraft Studios',
-      period: 'Jun 2017 - Feb 2019',
-      location: 'San Francisco, USA',
+      title: 'Associate Software Trainee',
+      company: 'InkProg Technologies.',
+      period: 'Aug 2022 – Nov 2022',
+      location: 'Hyderabad, Telangana',
       description: [
-        'Built interactive web applications using Angular and other frontend technologies',
-        'Optimized application performance, achieving a 25% reduction in load time',
-        'Implemented responsive designs for cross-platform compatibility',
-        'Participated in code reviews and mentored junior developers'
+        'I am a Software Trainee, starting my career and gaining practical experience in software development.',
+        'I work under the guidance of senior developers, learning how to code, debug, and test applications.',
+        'I get exposure to languages like Angular, HTML,Css,Scss,TypeScript and Bootstrap, along with development frameworks.',
+        'This role helps me improve both my technical skills (coding, debugging) and soft skills (communication, teamwork)',
+        'This position serves as a foundation, offering potential for advancement into senior roles as I gain experience.'
       ],
-      technologies: ['Angular', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Git']
-    }
+      technologies: ['Angular', 'TypeScript', 'NgRx', 'RxJS', 'Material UI', 'Boostrap']
+    },
+   
+   
   ];
 
   education: Education[] = [
     {
-      degree: 'Master of Science in Computer Science',
-      institution: 'Stanford University',
-      period: '2015 - 2017',
-      description: 'Specialized in Web Technologies and Software Engineering. Completed thesis on "Optimizing Performance in Single Page Applications".'
+      "degree": "Bachelor of Commerce (Computer Applications)",
+      "institution": "Sri Hari Degree College",
+      "period": "2018 - 2021",
+      "description": "Specialized in Computer Applications, focusing on software development, programming languages, and application design. Gained a strong foundation in both commerce and technology."
     },
     {
-      degree: 'Bachelor of Science in Computer Engineering',
-      institution: 'MIT',
-      period: '2011 - 2015',
-      description: 'Graduated with honors. Participated in various hackathons and coding competitions. Member of the Web Development Club.'
+      "degree": "Intermediate (MPC)",
+      "institution": "Sri Gayatri Junior College",
+      "period": "2015 - 2018",
+      "description": "Studied Mathematics, Physics, and Chemistry (MPC), developing strong analytical and problem-solving skills, laying the groundwork for further studies in technology."
     },
     {
-      degree: 'Full Stack Web Development Bootcamp',
-      institution: 'Coding Academy',
-      period: '2016 (3 months)',
-      description: 'Intensive program covering modern web development technologies including Angular, Node.js, and MongoDB.'
+      "degree": "10th Grade",
+      "institution": "Sri Vasista Vidya Mandir High School",
+      "period": "2014 - 2015",
+      "description": "Completed secondary education with a focus on general subjects, providing a solid academic base for higher education."
     }
+    
   ];
 
   setActiveTab(tab: string) {
