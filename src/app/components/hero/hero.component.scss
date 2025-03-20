@@ -81,14 +81,15 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
-  }
+}
+
 
   .hero-image img {
     max-width: 100%;
     border-radius: 2%;
     box-shadow: var(--box-shadow);
     position: relative;
-    left: 12%;
+    left: 3%;
   }
 
   @media (max-width: 992px) {
